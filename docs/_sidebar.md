@@ -13,6 +13,9 @@
 * 特征工程
   * [寻找关键特征: 信息增益, 卡方](statistics/key-feature)
   * [数值变换: 归一化和标准化](statistics/normalization-standardization)
+* A/B测试
+  * [显著性检验 - A/B测试](statistics/significant-difference-1)
+  * [显著性检验 - 方差分析（F检验）](statistics/significant-difference-2)
 * **线性代数**
 * [矩阵](linear_algebra/matrix)
 * [线性代数](linear_algebra/index)

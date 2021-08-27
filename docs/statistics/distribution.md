@@ -50,7 +50,7 @@ TODO
 
 ### 正态分布（高斯分布）
 
-Normal Distribution，高斯分布（Gaussian Distribution）。
+Normal Distribution，高斯分布（Gaussian Distribution）。[一文搞懂“正态分布”所有需要的知识点](https://zhuanlan.zhihu.com/p/128809461)。
 
 公式：
 
