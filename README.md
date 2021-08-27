@@ -1,5 +1,7 @@
 # ai-learn
 
+网站：https://chanjarster.github.io/ai-learn/
+
 准备虚拟环境：
 
 ```bash
