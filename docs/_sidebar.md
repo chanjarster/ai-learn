@@ -11,11 +11,16 @@
 * [信息熵和信息增益](statistics/entropy)
 * [决策树算法: ID3, C4.5, CART](statistics/decision-tree)
 * 特征工程
-  * [寻找关键特征: 信息增益, 卡方](statistics/key-feature)
+  * [寻找关键特征: 信息增益, 卡方检验](statistics/key-feature)
   * [数值变换: 归一化和标准化](statistics/normalization-standardization)
-* A/B测试
-  * [显著性检验 - A/B测试](statistics/significant-difference-1)
-  * [显著性检验 - 方差分析（F检验）](statistics/significant-difference-2)
+* 显著性检验
+  * [A/B测试及基本概念](statistics/ab-test)
+  * [方差分析（F检验）](statistics/anova)
+  * t检验 TODO
+  * 卡方检验 TODO
+  * 二项分布检验 TODO
+  * K-S 检验 TODO
+* [为何会有欠拟合和过拟合？](statistics/under-over-fit)
 * **线性代数**
 * [矩阵](linear_algebra/matrix)
 * [线性代数](linear_algebra/index)
