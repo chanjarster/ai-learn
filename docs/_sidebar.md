@@ -42,4 +42,8 @@
 
 * [向量空间](linear_algebra/vector-space)
 
+* [文本检索: tf-idf](linear_algebra/tf-idf)
+
+* [K-Means聚类算法](linear_algebra/k-means)
+
   
