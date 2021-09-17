@@ -46,4 +46,6 @@
 
 * [K-Means聚类算法](linear_algebra/k-means)
 
+* [利用矩阵计算PageRank](linear_algebra/matrix-page-rank)
+
   
