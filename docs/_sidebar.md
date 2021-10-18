@@ -1,5 +1,5 @@
 * **[首页](/)**
-* **概率统计**
+* ***概率统计***
 * [概率基础](statistics/basic)
 * [概率分布](statistics/distribution)
 * [基于朴素贝叶斯的分类](statistics/naive-bayes)
@@ -21,11 +21,19 @@
   * 二项分布检验 TODO
   * K-S 检验 TODO
 * [为何会有欠拟合和过拟合？](statistics/under-over-fit)
-* **线性代数**
+* ***线性代数***
 * [基础](linear_algebra/basic)
 * [向量空间](linear_algebra/vector-space)
 * [文本检索: tf-idf](linear_algebra/tf-idf)
 * [K-Means聚类算法](linear_algebra/k-means)
-* [利用矩阵计算PageRank](linear_algebra/matrix-page-rank)
-* [利用矩阵计算协同过滤推荐](linear_algebra/matrix-collab-filter)
-
+* **矩阵**
+  * [利用矩阵计算PageRank](linear_algebra/matrix-page-rank)
+  * [利用矩阵计算协同过滤推荐](linear_algebra/matrix-collab-filter)
+* **线性回归**
+  * [使用高斯消元求解线性方程组](linear_algebra/linear-reg-1)
+  * 使用最小二乘法进行直线拟合
+  * 使用最小二乘法进行效果验证
+* **PCA主成分分析**
+  * 利用协方差矩阵来降维
+  * 为何要计算协方差矩阵的特征值和特征向量？
+* 奇异值分解
