@@ -10,10 +10,10 @@
 * [语音识别: 隐马尔科夫模型](statistics/implicit-markov-model)
 * [信息熵和信息增益](statistics/entropy)
 * [决策树算法: ID3, C4.5, CART](statistics/decision-tree)
-* 特征工程
+* **特征工程**
   * [寻找关键特征: 信息增益, 卡方检验](statistics/key-feature)
   * [数值变换: 归一化和标准化](statistics/normalization-standardization)
-* 显著性检验
+* **显著性检验**
   * [A/B测试及基本概念](statistics/ab-test)
   * [方差分析（F检验）](statistics/anova)
   * t检验 TODO
