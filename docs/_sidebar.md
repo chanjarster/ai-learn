@@ -30,9 +30,9 @@
   * [利用矩阵计算PageRank](linear_algebra/matrix-page-rank)
   * [利用矩阵计算协同过滤推荐](linear_algebra/matrix-collab-filter)
 * **线性回归**
-  * [使用高斯消元求解线性方程组](linear_algebra/linear-reg-1)
-  * 使用最小二乘法进行直线拟合
-  * 使用最小二乘法进行效果验证
+  * [使用高斯消元求解线性方程组](linear_algebra/gaussian-elimination)
+  * [使用最小二乘法进行直线拟合](linear_algebra/least-squares)
+  * [使用最小二乘法进行效果验证](linear_algebra/apply-least-squares)
 * **PCA主成分分析**
   * 利用协方差矩阵来降维
   * 为何要计算协方差矩阵的特征值和特征向量？

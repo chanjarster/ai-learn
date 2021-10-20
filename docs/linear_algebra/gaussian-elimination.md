@@ -20,7 +20,7 @@
 
 假设我们有多个这样的方程，就能构成线性方程组，我这里列出一个例子。
 
-![](linear-reg-1/formular-1.jpg)
+![](gaussian-elimination/formular-1.jpg)
 
 对于上面这个方程组，如果存在至少一组 x1、x2 和 x3 使得三个方程都成立，那么就叫方程有解。
 
@@ -33,7 +33,7 @@
 
 *消元*之后的得到：
 
-![](linear-reg-1/formular-2.jpg)
+![](gaussian-elimination/formular-2.jpg)
 
 最后我们通过*回代*得到<big>x</big><sub>1</sub><big>= 71</big>、<big>x</big><sub>2</sub><big>= - 86</big>、<big>x</big><sub>3</sub><big>= - 56</big>的解。
 
@@ -45,21 +45,21 @@
 
 首先我们要把方程中的系数 <big>b</big><sub>i</sub> 转成矩阵，我们把这个矩阵记作 B：
 
-![](linear-reg-1/matrix-b.webp)
+![](gaussian-elimination/matrix-b.webp)
 
 而消元结果把系数矩阵B变为：
 
-![](linear-reg-1/matrix-u.webp)
+![](gaussian-elimination/matrix-u.webp)
 
 从此可以看出，消元的过程就是把原始的系数矩阵变为*上三角矩阵*。这里的上三角矩阵表示，矩阵中只有主对角线以及主对角线以上的三角部分里有数字。我们用 *U 表示上三角矩阵*。
 
 而回代结果可以看成：
 
-![](linear-reg-1/formular-3.jpg)
+![](gaussian-elimination/formular-3.jpg)
 
 而对应的系数矩阵则是：
 
-![](linear-reg-1/matrix-i.webp)
+![](gaussian-elimination/matrix-i.webp)
 
 其实就是单位矩阵，所以说回代的过程是把上三角矩阵变为单位矩阵的过程。
 
@@ -72,7 +72,7 @@
 
 为了便于后面的回代计算，我们也可以把方程式等号右边的值加入到系数矩阵，我们称这个新的矩阵为**增广矩阵**，我把这个矩阵记为 A。
 
-![](linear-reg-1/matrix-a.webp)
+![](gaussian-elimination/matrix-a.webp)
 
 对于这个矩阵，我们的最终目标是，把**除了最后一列之外的部分**，变成单位矩阵，而此时最后一列中的每个值，就是每个自变量所对应的解了。
 
@@ -86,27 +86,27 @@
 
 所以把3个行向量组成矩阵E1：
 
-![](linear-reg-1/matrix-e1.webp)
+![](gaussian-elimination/matrix-e1.webp)
 
 把E1 和 A点乘，实现消除第二个和第三个方程式中 <big>x</big><sub>1</sub> 的目的：
 
-![](linear-reg-1/matrix-e1a.webp)
+![](gaussian-elimination/matrix-e1a.webp)
 
 你会发现，由于使用了增广矩阵，矩阵中最右边的一列，也就是方程等号右边的数值也会随之发生改变。
 
 然后我们发现，只要把第二个方程式和第三个方程式互换位置就能够得到上三角矩阵，所以利用E2：
 
-![](linear-reg-1/matrix-e2.webp)
+![](gaussian-elimination/matrix-e2.webp)
 
 来互换这两行结果，从而得到上三角矩阵：
 
-![](linear-reg-1/matrix-e2f.webp)
+![](gaussian-elimination/matrix-e2f.webp)
 
 因此把E2左乘E1的结果记作 E3，并把 E3 称为消元矩阵（还记得消元吗？消元的过程就是把原始的系数矩阵变为*上三角矩阵*的过程）：
 
-![](linear-reg-1/matrix-e3f.webp)
+![](gaussian-elimination/matrix-e3f.webp)
 
-![](linear-reg-1/matrix-e3.webp)
+![](gaussian-elimination/matrix-e3.webp)
 
 ### 回代过程
 
@@ -114,25 +114,25 @@
 
 上三角矩阵目前是这样的：
 
-![](linear-reg-1/matrix-u.webp)
+![](gaussian-elimination/matrix-u.webp)
 
 和消元不同的是，我们将从第三个方程式开始，只需要把所有系数取反就行了，所以会使用下面这个矩阵 S1 实现：
 
-![](linear-reg-1/matrix-s1.webp)
+![](gaussian-elimination/matrix-s1.webp)
 
-![](linear-reg-1/matrix-s1f.webp)
+![](gaussian-elimination/matrix-s1f.webp)
 
 然后从第二个方程式开始，去掉其中的<big>x</big><sub>3</sub>，要把第二个方程减去 3 倍的第三个方程：
 
-![](linear-reg-1/matrix-s2f1.webp)
+![](gaussian-elimination/matrix-s2f1.webp)
 
 然后把第二个方程除以 -2。
 
-![](linear-reg-1/matrix-s2f2.webp)
+![](gaussian-elimination/matrix-s2f2.webp)
 
 最后，对于第一个方程，我们要把第一个方程减去第二个和第三个方程，最后除以 2，我把这几步合并了，并列在下方：
 
-![](linear-reg-1/matrix-s3f.webp)
+![](gaussian-elimination/matrix-s3f.webp)
 
 可以看到矩阵已经变成单元矩阵了，而结果矩阵的最后一列就是方程组的解。
 
@@ -140,17 +140,21 @@
 
 把回代部分的矩阵都点乘起来，得到S：
 
-![](linear-reg-1/matrix-s.webp)
+![](gaussian-elimination/matrix-s.webp)
 
 而消元矩阵E3：
 
-![](linear-reg-1/matrix-e3.webp)
+![](gaussian-elimination/matrix-e3.webp)
 
 让矩阵 S 左乘矩阵 E3得到矩阵SE：
 
-![](linear-reg-1/matrix-se.webp)
+![](gaussian-elimination/matrix-se.webp)
 
 我们把这个矩阵记作 SE，把乘以最初的系数矩阵 B，就得到了一个单位矩阵。根据逆矩阵的定义，SE 就是 B 的逆矩阵。
 
 换个角度来思考，使用消元法进行线性方程组求解的过程，就是在找系数矩阵的逆矩阵的过程。
+
+## python代码
+
+见 notebooks/gaussian-elimination.ipynb
 
