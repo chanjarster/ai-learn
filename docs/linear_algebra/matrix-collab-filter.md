@@ -32,6 +32,8 @@
 
 ![](matrix-collab-filter/user-based-formula-1.webp)
 
+![](matrix-collab-filter/user-based-formula-1-exp.png)
+
 使用了夹角余弦，回顾一下：
 
 ![](vector-space/cosine.webp)
@@ -41,6 +43,8 @@
 **第二个公式**
 
 ![](matrix-collab-filter/user-based-formula-2.webp)
+
+![](matrix-collab-filter/user-based-formula-2-exp.png)
 
 利用第一个公式所计算的用户间相似度，以及用户对物品的喜好度，预测任一个用户对任一个物品的喜好度。其中 p_i,j 表示第 i 用户对第 j 个物品的喜好度，us_i,k 表示用户 i 和 k 之间的相似度，x_k,j 表示用户 k 对物品 j 的喜好度。注意这里最终需要除以 Σus_i,k，是为了进行**归一化**。
 
@@ -93,6 +97,8 @@ us_i,j 为第 i 个用户与第 j 个用户的相似度，对角线是为1因为
 最终，使用 USP 和 USR 的元素**对应除法**，就可以求得矩阵 P：
 
 ![](matrix-collab-filter/user-based-calc-6.webp)
+
+![](matrix-collab-filter/user-based-calc-6-exp.png)
 
 P 是使用推荐算法预测出来的喜好度，X 是已知的喜好度，仔细观察这两个矩阵，值并不相同，不过没关系，不影响我们推荐。在原始矩阵 X 中第 1 个用户对第 3 个物品的喜好度为 0。可是在最终的喜好度推荐矩阵 P 中，第 1 个用户对第 3 个物品的喜好度为 0.278，已经明显大于 0 了，因此我们就可以把物品 3 推荐给用户 1。
 
