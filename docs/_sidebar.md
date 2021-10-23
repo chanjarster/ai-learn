@@ -34,6 +34,6 @@
   * [使用最小二乘法进行直线拟合](linear_algebra/least-squares)
   * [使用最小二乘法进行效果验证](linear_algebra/apply-least-squares)
 * **PCA主成分分析**
-  * 利用协方差矩阵来降维
-  * 为何要计算协方差矩阵的特征值和特征向量？
+  * [利用协方差矩阵来降维](linear_algebra/pca-cov-matrix)
+  * [原理](linear_algebra/pca-why)
 * 奇异值分解
