@@ -36,4 +36,10 @@
 * **PCA主成分分析**
   * [利用协方差矩阵来降维](linear_algebra/pca-cov-matrix)
   * [原理](linear_algebra/pca-why)
-* 奇异值分解
+* [奇异值分解如何挖掘潜在的语义关系？][1]
+* [矩阵乘法的几何意义][2]
+
+
+
+[1]: https://time.geekbang.org/column/article/87657
+[2]: https://time.geekbang.org/column/article/88078
