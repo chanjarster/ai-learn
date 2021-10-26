@@ -39,7 +39,9 @@
 * [奇异值分解如何挖掘潜在的语义关系？][1]
 * [矩阵乘法的几何意义][2]
 
+数学基础
 
+* [数学基础 - 线性代数](ai_basics/linear_algebra)
 
 [1]: https://time.geekbang.org/column/article/87657
 [2]: https://time.geekbang.org/column/article/88078

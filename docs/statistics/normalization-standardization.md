@@ -54,17 +54,13 @@ print(regression.coef_)            #各个特征所对应的系
 **这种方法有个不足最大值与最小值非常容易受噪音数据的影响。**
 
 ```python
-from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 
-
 minMaxScaler = MinMaxScaler()       #基于min和max值的归一化
-
 
 df_normalized = minMaxScaler.fit_transform(df)  #对原始数据进行归一化，包括特征值和目标变量
 df_features_normalized = df_normalized[:, 0:-1] #获取归一化之后的特征值
 df_targets_normalized = df_normalized[:, -1]    #获取归一化之后的目标值
-
 
 #再次进行线性回归
 regression_normalized = LinearRegression().fit(df_features_normalized, df_targets_normalized)
@@ -99,16 +95,15 @@ z 分数标准化是利用标准正态分布的特点，计算一个给定分数
 其中 x 为原始值，u 为均值，σ 为标准差，x’ 是变换后的值。
 
 ```python
-standardScaler = StandardScaler()    #基于Z分数的标准化
+from sklearn.preprocessing import StandardScaler
 
+standardScaler = StandardScaler()    #基于Z分数的标准化
 
 standardScaler.fit(df)
 df_standardized = standardScaler.transform(df)  #对原始数据进行标准化，包括特征值和目标变量
 
-
 df_features_standardized = df_standardized[:, 0:-1] #获取标准化之后的特征值
-df_targets_standardized = df_standardized[:, -1]    #获取标准化之后的特征值
-
+df_targets_standardized = df_standardized[:, -1]    #获取标准化之后的目标值
 
 #再次进行线性回归
 regression_standardized = LinearRegression().fit(df_features_standardized, df_targets_standardized)
