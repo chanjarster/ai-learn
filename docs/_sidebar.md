@@ -1,5 +1,7 @@
 * **[首页](/)**
-* ***概率统计***
+
+&nbsp;&nbsp;概率统计
+
 * [概率基础](statistics/basic)
 * [概率分布](statistics/distribution)
 * [基于朴素贝叶斯的分类](statistics/naive-bayes)
@@ -21,7 +23,9 @@
   * 二项分布检验 TODO
   * K-S 检验 TODO
 * [为何会有欠拟合和过拟合？](statistics/under-over-fit)
-* ***线性代数***
+
+&nbsp;&nbsp;线性代数
+
 * [基础](linear_algebra/basic)
 * [向量空间](linear_algebra/vector-space)
 * [文本检索: tf-idf](linear_algebra/tf-idf)
@@ -39,7 +43,7 @@
 * [奇异值分解如何挖掘潜在的语义关系？][1]
 * [矩阵乘法的几何意义][2]
 
-数学基础
+&nbsp;&nbsp;数学基础
 
 * [线性代数](ai_basics/linear_algebra)
 * [概率统计](ai_basics/statistics)
