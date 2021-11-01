@@ -41,8 +41,9 @@
 
 数学基础
 
-* [数学基础 - 线性代数](ai_basics/linear_algebra)
-* [数学基础 - 概率统计](ai_basics/statistics)
+* [线性代数](ai_basics/linear_algebra)
+* [概率统计](ai_basics/statistics)
+* [数理统计](ai_basics/math_statistics)
 
 [1]: https://time.geekbang.org/column/article/87657
 [2]: https://time.geekbang.org/column/article/88078
