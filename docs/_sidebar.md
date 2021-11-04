@@ -48,6 +48,8 @@
 * [线性代数](ai_basics/linear_algebra)
 * [概率统计](ai_basics/statistics)
 * [数理统计](ai_basics/math_statistics)
+* [最优化方法](ai_basics/optimization)
+* [信息论](ai_basics/info_theory)
 
 [1]: https://time.geekbang.org/column/article/87657
 [2]: https://time.geekbang.org/column/article/88078
