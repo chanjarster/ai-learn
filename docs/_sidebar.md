@@ -51,5 +51,9 @@
 * [最优化方法](ai_basics/optimization)
 * [信息论](ai_basics/info_theory)
 
+机器学习
+
+* [机器学习概述](ai_basics/ml-summary)
+
 [1]: https://time.geekbang.org/column/article/87657
 [2]: https://time.geekbang.org/column/article/88078
