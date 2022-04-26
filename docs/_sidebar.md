@@ -54,6 +54,7 @@
 机器学习
 
 * [机器学习概述](ai_basics/ml-summary)
+* [线性回归](ai_basics/ml-linear-regression)
 
 [1]: https://time.geekbang.org/column/article/87657
 [2]: https://time.geekbang.org/column/article/88078
